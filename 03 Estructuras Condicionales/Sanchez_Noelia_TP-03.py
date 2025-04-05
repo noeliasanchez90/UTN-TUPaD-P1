@@ -70,6 +70,38 @@ cantidad_caracteres = len(contraseña)
 # Si la cantidad de caracteres ingresados esta entre 8 y 14, imprimir "Ha ingresado una contraseña correcta"
 if 8 <= cantidad_caracteres <= 14:
     print("Ha ingresado una contraseña correcta")
-# si la cantidad de caracteres ingresados es menor que 8 o ayor que 14, imprimir "Por favor, ingrese una contraseña de entre 8 y 14 caracteres"
+# Si la cantidad de caracteres ingresados es menor que 8 o ayor que 14, imprimir "Por favor, ingrese una contraseña de 
+# entre 8 y 14 caracteres"
 else: 
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+
+
+
+#Ejercicio 6: escribir un programa que tome la lista numeros_aleatorios, calcule su moda, su mediana y su media y las 
+# compare para determinar si hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla.
+
+# Creo una lista con 50 números entre 1 y 100 elegidos de forma aleatoria:
+import random 
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+print (numeros_aleatorios)
+import statistics
+# Calcular la media
+Media=statistics.mean(numeros_aleatorios)
+# Calcular la moda
+Moda=statistics.mode(numeros_aleatorios)
+# Calcular la mediana
+Mediana=statistics.median(numeros_aleatorios)
+print(f"La Media es: {Media}, la Moda es: {Moda} y la Mediana es: {Mediana}")
+# Sesgo positivo o a la derecha: cuando la media es mayor que la mediana y, a su vez, la mediana es mayor que la moda.
+if Media > Mediana and Mediana > Moda:
+    print("Sesgo positivo o a la derecha")
+# Sesgo negativo o a la izquierda: cuando la media es menor que la mediana y, a su vez, la mediana es menor que la moda. 
+elif Media < Mediana and Mediana < Moda:
+    print("Sesgo negativo o a la izquierda")
+# Sin sesgo: cuando la media, la mediana y la moda son iguales.
+else:
+    print("Sin sesgo")
+
+
+
+ 
