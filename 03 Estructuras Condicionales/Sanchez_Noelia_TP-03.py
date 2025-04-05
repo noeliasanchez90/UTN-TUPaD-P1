@@ -203,3 +203,35 @@ print(f"La magnitud ingresada es de: {Magnitud}, en la escala de Richter equival
 
 
 
+# Ejercicio 10: Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y 
+# qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño,
+# invierno, primavera o verano.
+
+# Solicitar información al usuario
+Hemisferio=input("Por favor, indique en que hemisferio se encuentra, si esta en el Norte ingrese N y si esta en el Sur ingrese S: ")
+Dia=int(input("Ingrese el día: "))
+Mes=input("Ingrese el mes en el que se encuentra: ")
+
+# Función .upper para que el usuario pueda ingresar los datos solicitados tanto en minuscula como en mayúscula.
+Hemisferio = Hemisferio.upper()
+Mes = Mes.upper()
+
+# Función para determinar la estación
+if Hemisferio == 'N' and ((Mes == 'DICIEMBRE' and 21 <= Dia) or Mes == 'ENERO' or Mes == 'FEBRERO' or (Mes == 'MARZO' and Dia <= 20)):
+    print("Usted se encuentra en Invierno")
+elif Hemisferio == 'N' and ((Mes == 'MARZO' and Dia <=21) or Mes == 'ABRIL' or Mes == 'MAYO' or (Mes == 'JUNIO' and Dia <=20)):
+    print("Usted se encuentra en Primavera")
+elif Hemisferio == 'N' and ((Mes == 'JUNIO' and Dia >= 21) or Mes == 'JULIO' or Mes == 'AGOSTO' or (Mes == 'SEPTIEMBRE' and Dia <= 20)):
+    print("Usted se encuentra en Verano")
+elif Hemisferio == 'N' and ((Mes == 'SEPTIEMBRE' and Dia >= 21) or Mes == 'OCTUBRE' or Mes == 'NOVIEMBRE' or ( Mes == 'DICIEMBRE' and Dia <= 20)): 
+    print("Usted se encuentra en Otoño")
+
+elif Hemisferio == 'S' and ((Mes == 'DICIEMBRE' and 21 <= Dia) or Mes == 'ENERO' or Mes == 'FEBRERO' or (Mes == 'MARZO' and Dia <= 20)):
+    print("Usted se encuentra en Verano")
+elif Hemisferio == 'S' and ((Mes == 'MARZO' and Dia <=21) or Mes == 'ABRIL' or Mes == 'MAYO' or (Mes == 'JUNIO' and Dia <=20)):
+    print("Usted se encuentra en Otoño")
+elif Hemisferio == 'S' and ((Mes == 'JUNIO' and Dia >= 21) or Mes == 'JULIO' or Mes == 'AGOSTO' or (Mes == 'SEPTIEMBRE' and Dia <= 20)):
+    print("Usted se encuentra en Invierno")
+elif Hemisferio == 'S' and ((Mes == 'SEPTIEMBRE' and Dia >= 21) or Mes == 'OCTUBRE' or Mes == 'NOVIEMBRE' or ( Mes == 'DICIEMBRE' and Dia <= 20)): 
+    print("Usted se encuentra en Primavera")
+
