@@ -104,4 +104,16 @@ else:
 
 
 
- 
+ # Ejercicio 7: Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con 
+ # vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar 
+ # el string tal cual lo ingresó el usuario e imprimirlo por pantalla.
+
+frase = input("Por favor, ingrese una frase o palabra: ")
+
+# Verificar si el último carácter es una vocal
+if frase[-1].lower() in 'aeiou':
+    # Añadir un signo de exclamación
+    frase += '!'
+    
+# Imprimir el resultado
+print(frase)
