@@ -2,9 +2,11 @@
 #mostrar un mensaje en pantalla que diga “Es mayor de edad”.
 
 edad=int(input("Por favor, ingrese su edad: "))
+
 # Si edad es mayor o igal que 18, imprimir "Es mayor de edad"
 if edad >= 18:
     print("Es mayor de edad")
+
 
 
 
@@ -12,12 +14,15 @@ if edad >= 18:
 # pantalla un mensaje que diga “Aprobado”; en caso contrario deberá mostrar el mensaje “Desaprobado”.
 
 nota=int(input("Ingrese su nota: "))
+
 # Si la nota ingresada es mayor que 6, imprimir "Aprobado"
 if nota >= 6:
     print("Aprobado")
+
 # En cualquier otro caso, imprimir "Desaprobado""
 else:
     print("Desaprobado")
+
 
 
 
@@ -27,12 +32,15 @@ else:
 # si un número es par o impar.
 
 num_par=int(input("Por favor, ingrese un número par: "))
+
 # Si al dividir num_par por 2 el resto es igaul a 0, imprimir "Ha ingresado un número par"
 if num_par % 2 == 0:
     print("Ha ingresado un número par")
+
 # Si no, si el resto es distinto de cero, imprimir "Por favor, ingrese un número par"
 else:
     print("Por favor, ingrese un número par")
+
 
 
 
@@ -44,6 +52,7 @@ else:
 # ● Adulto/a: mayor o igual que 30 años.
 
 Edad=int(input("Por favor, ingrese su edad: "))
+
 # Determinar la categoría según la edad
 if Edad < 12:
     categoria = "Niño/a"
@@ -53,8 +62,10 @@ elif 18 <= Edad < 30:
     categoria = "Adulto/a joven"
 else :
     categoria = "Adulto/a"
+
 # Imprimir la categoría
 print(f"Tu categoría es: {categoria}")
+
 
 
 
@@ -74,6 +85,7 @@ if 8 <= cantidad_caracteres <= 14:
 # entre 8 y 14 caracteres"
 else: 
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+
 
 
 
@@ -109,6 +121,7 @@ else:
 
 
 
+
  # Ejercicio 7: Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con 
  # vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar 
  # el string tal cual lo ingresó el usuario e imprimirlo por pantalla.
@@ -122,6 +135,7 @@ if frase[-1].lower() in 'aeiou':
     
 # Imprimir el resultado
 print(frase)
+
 
 
 
@@ -157,6 +171,35 @@ elif opcion == '3':
     print("Tu nombre con la primera letra mayúscula es:", resultado)
 else:
     print("Opción no válida. Por favor, selecciona 1, 2 o 3.")
+
+
+
+
+# Ejercicio 9: Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la magnitud en una de 
+# las siguientes categorías según la escala de Richter e imprima el resultado por pantalla:
+# ● Menor que 3: "Muy leve" (imperceptible).
+# ● Mayor o igual que 3 y menor que 4: "Leve" (ligeramente perceptible).
+# ● Mayor o igual que 4 y menor que 5: "Moderado" (sentido por personas, pero generalmente no causa daños).
+# ● Mayor o igual que 5 y menor que 6: "Fuerte" (puede causar daños en estructuras débiles).
+# ● Mayor o igual que 6 y menor que 7: "Muy Fuerte" (puede causar daños significativos).
+# ● Mayor o igual que 7: "Extremo" (puede causar graves daños a gran escala).
+
+Magnitud=float(input("Por favor, ingrese la magnitud de un terremoto: "))
+
+# Determinar la intensidad según la magnitud
+if Magnitud < 3:
+    Intensidad = "Muy leve (imperceptible)"
+elif 3 <= Magnitud < 4:
+    Intensidad = "Leve (ligeramente perceptible)"
+elif 4 <= Magnitud < 5:
+    Intensidad = "Moderado (sentido por personas, pero generalmente no causa daños)"
+elif 5 <= Magnitud < 6: 
+    Intensidad = "Muy Fuerte (puede causar daños significativos)"
+else:
+    Intensidad = "Extremo (puede causar graves daños a gran escala)"
+
+# Mostrar el resultado
+print(f"La magnitud ingresada es de: {Magnitud}, en la escala de Richter equivale a un terremoto de intensidad {Intensidad}.")
 
 
 
