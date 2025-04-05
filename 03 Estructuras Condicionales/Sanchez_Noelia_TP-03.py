@@ -79,25 +79,30 @@ else:
 
 #Ejercicio 6: escribir un programa que tome la lista numeros_aleatorios, calcule su moda, su mediana y su media y las 
 # compare para determinar si hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla.
-
 # Creo una lista con 50 números entre 1 y 100 elegidos de forma aleatoria:
 import random 
 numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 print (numeros_aleatorios)
 import statistics
+
 # Calcular la media
 Media=statistics.mean(numeros_aleatorios)
+
 # Calcular la moda
 Moda=statistics.mode(numeros_aleatorios)
+
 # Calcular la mediana
 Mediana=statistics.median(numeros_aleatorios)
 print(f"La Media es: {Media}, la Moda es: {Moda} y la Mediana es: {Mediana}")
+
 # Sesgo positivo o a la derecha: cuando la media es mayor que la mediana y, a su vez, la mediana es mayor que la moda.
 if Media > Mediana and Mediana > Moda:
     print("Sesgo positivo o a la derecha")
+
 # Sesgo negativo o a la izquierda: cuando la media es menor que la mediana y, a su vez, la mediana es menor que la moda. 
 elif Media < Mediana and Mediana < Moda:
     print("Sesgo negativo o a la izquierda")
+
 # Sin sesgo: cuando la media, la mediana y la moda son iguales.
 else:
     print("Sin sesgo")
@@ -117,3 +122,41 @@ if frase[-1].lower() in 'aeiou':
     
 # Imprimir el resultado
 print(frase)
+
+
+
+# Ejercicio 8: Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3 dependiendo de la 
+# opción que desee:
+# 1. Si quiere su nombre en mayúsculas. Por ejemplo: PEDRO.
+# 2. Si quiere su nombre en minúsculas. Por ejemplo: pedro.
+# 3. Si quiere su nombre con la primera letra mayúscula. Por ejemplo: Pedro.
+# El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el usuario e imprimir el 
+# resultado por pantalla. Nota: investigue uso de las funciones upper(), lower() y title() de Python para convertir entre 
+# mayúsculas y minúsculas.
+
+# Solicitar el nombre del usuario
+nombre = input("Por favor, ingresa tu nombre: ")
+
+# Solicitar la opción deseada
+print("Selecciona una opción:")
+print("1. Nombre en mayúsculas")
+print("2. Nombre en minúsculas")
+print("3. Nombre con la primera letra mayúscula")
+
+opcion = input("Ingresa 1, 2 o 3: ")
+
+# Transformar el nombre según la opción seleccionada
+if opcion == '1':
+    resultado = nombre.upper()
+    print("Tu nombre en mayúsculas es:", resultado)
+elif opcion == '2':
+    resultado = nombre.lower()
+    print("Tu nombre en minúsculas es:", resultado)
+elif opcion == '3':
+    resultado = nombre.title()
+    print("Tu nombre con la primera letra mayúscula es:", resultado)
+else:
+    print("Opción no válida. Por favor, selecciona 1, 2 o 3.")
+
+
+
