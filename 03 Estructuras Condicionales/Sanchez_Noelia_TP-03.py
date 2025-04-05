@@ -33,3 +33,27 @@ if num_par % 2 == 0:
 # Si no, si el resto es distinto de cero, imprimir "Por favor, ingrese un número par"
 else:
     print("Por favor, ingrese un número par")
+
+
+
+# Ejercicio 4: Escribir un programa que solicite al usuario su edad e imprima por pantalla a cuál de las siguientes 
+# categorías pertenece: 
+# ● Niño/a: menor de 12 años. 
+# ● Adolescente: mayor o igual que 12 años y menor que 18 años. 
+# ● Adulto/a joven: mayor o igual que 18 años y menor que 30 años. 
+# ● Adulto/a: mayor o igual que 30 años.
+
+Edad=int(input("Por favor, ingrese su edad: "))
+# Determinar la categoría según la edad
+if Edad < 12:
+    categoria = "Niño/a"
+elif 12 <= Edad < 18:
+    categoria = "Adolecente"
+elif 18 <= Edad < 30:
+    categoria = "Adulto/a joven"
+else :
+    categoria = "Adulto/a"
+# Imprimir la categoría
+print(f"Tu categoría es: {categoria}")
+
+
