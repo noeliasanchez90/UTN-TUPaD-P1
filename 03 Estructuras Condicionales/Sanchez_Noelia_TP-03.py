@@ -57,3 +57,19 @@ else :
 print(f"Tu categoría es: {categoria}")
 
 
+
+#Ejercicio 5: Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14).
+# Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en pantalla el mensaje "Ha ingresado una 
+# contraseña correcta"; en caso contrario, imprimir por pantalla "Por favor, ingrese una contraseña de entre 
+# 8 y 14 caracteres". Nota: investigue el uso de la función len() en Python para evaluar la cantidad de elementos que 
+# tiene un iterable tal como una lista o un string.
+
+contraseña=input("Por favor, ingrese una contraseña de entre 8 y 14 caracteres: ")
+# Calculo la cantidad de caracteres ingresados con la función len()
+cantidad_caracteres = len(contraseña)
+# Si la cantidad de caracteres ingresados esta entre 8 y 14, imprimir "Ha ingresado una contraseña correcta"
+if 8 <= cantidad_caracteres <= 14:
+    print("Ha ingresado una contraseña correcta")
+# si la cantidad de caracteres ingresados es menor que 8 o ayor que 14, imprimir "Por favor, ingrese una contraseña de entre 8 y 14 caracteres"
+else: 
+    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
