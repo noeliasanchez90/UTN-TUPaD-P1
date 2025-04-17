@@ -116,8 +116,10 @@ elif Media < Mediana and Mediana < Moda:
     print("Sesgo negativo o a la izquierda")
 
 # Sin sesgo: cuando la media, la mediana y la moda son iguales.
-else:
+elif Media == Mediana == Moda:
     print("Sin sesgo")
+else:
+    print("No se puede determinar si esta distribución tiene sesgo o no")
 
 
 
