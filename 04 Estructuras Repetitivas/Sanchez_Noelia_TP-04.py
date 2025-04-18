@@ -79,3 +79,11 @@ while num != num_aleatorio:
 
 # Se muestra por pantalla la cantidad de intentos.
 print("se hicieron ", cont, "intentos")
+
+
+
+# Ejercicio 6: Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
+# entre 0 y 100, en orden decreciente.
+
+for num in range (100, -1, -2):
+    print(str(num), end=' ')
