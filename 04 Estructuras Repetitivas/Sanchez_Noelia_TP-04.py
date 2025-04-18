@@ -104,3 +104,12 @@ if num >= 0:
 else:
     print("No ingresó un número entero positivo")
 
+
+
+# Ejercicio 8: Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
+# programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
+# negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad
+# menor, pero debe estar preparado para procesar 100 números con un solo cambio).
+
+for cont in range(0, 4):
+    input("Ingrese el", cont, "° número")
