@@ -65,7 +65,7 @@ print("La sumatoria de los números ingresados es = ", sumatoria)
 # Se importa la librería random
 import random
 #Se le solicita al usuario que adivine un núm entre 0 y 9
-num = int(input("Adivine el número entre 0 y 9:"))
+num = int(input("Adivine el número entre 0 y 9: "))
 # Se aplica la función randint() para generar un num aleatorio entre 0 y 9
 num_aleatorio = random.randint(0, 9)
 print(num_aleatorio)
@@ -87,3 +87,20 @@ print("se hicieron ", cont, "intentos")
 
 for num in range (100, -1, -2):
     print(str(num), end=' ')
+
+
+
+# Ejercicio 7: Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
+# número entero positivo indicado por el usuario.
+
+num = int(input("Ingrese un número entero positivo: "))
+sumatoria = 0
+
+if num >= 0:
+    for x in range(0, num + 1):
+        sumatoria += x
+    print("La sumatoria de los núm. comprendidos entre 0 y",num, "es de:", sumatoria)
+
+else:
+    print("No ingresó un número entero positivo")
+
