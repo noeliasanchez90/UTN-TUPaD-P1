@@ -156,3 +156,15 @@ print("la media de los 100 valores ingresados es de", (sumatoria / CANT_NUMEROS)
 
 
 
+
+# Ejercicio 10: Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+# usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+
+# Se solicita al usuario que ingrese un número
+num = input("Ingrese un número: ")
+
+# Invertir el número convirtiéndolo en una cadena y usando slicing
+numero_invertido = num[::-1]
+
+# Se muestra por pantalla el número invertido
+print("el número", num, "invertido es", numero_invertido)
