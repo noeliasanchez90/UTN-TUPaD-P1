@@ -134,3 +134,25 @@ print("Se ingresaron", par, "números pares")
 print("Se ingresaron", impar, "números impares")
 print("Se ingresaron", negativo, "números negativos")
 print("Se ingresaron", positivo, "números positivos")
+
+
+
+
+# Ejercicio 9: Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos
+# valores. (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo 
+# un valor).
+
+
+CANT_NUMEROS = 100  # Defino una constante para definir la cantidad de números a ingresar
+sumatoria = 0       # Inicializo la variable sumatoria en 0
+
+# Inicializo un bucle for donde en cada ciclo solicita un número al usuario y los va sumando
+for cont in range(1, CANT_NUMEROS + 1):
+    num = int(input("Ingrese un número entero: "))
+    sumatoria += num
+
+# Muestra por pantalla la media de los valores ingresados
+print("la media de los 100 valores ingresados es de", (sumatoria / CANT_NUMEROS))
+
+
+

@@ -1,28 +1,12 @@
-# Ejercicio 8: Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar 
-# cuántos de estos números son pares, cuántos son impares, cuántos son negativos y cuántos son positivos. (Nota: para 
-# probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo 
-# cambio).
+# Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores.
+# (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo un valor).
 
-# inicializo las vaiables contadoras en 0
-par = 0
-impar = 0
-negativo = 0
-positivo = 0
+CANT_NUMEROS = 10
+sumatoria = 0
 
-# Creo un ciclo for donde el usuario debe ingresar 100 números enteros
-for cont in range(1, 10):
-    num = int(input("Ingrese un número: "))
-    if (num % 2) == 0:   # Si el resto de la división por 2 es 0, se cuenta como número par
-        par += 1
-    elif (num % 2) != 0: # Si el resto de la división por 2 es distinta de 0, se cuenta como número impar
-        impar += 1
-    if num < 0:          # Si el num ingresado es menor que cero, se cuenta como número negativo
-        negativo += 1
-    elif num >= 0:       # Si el número ingresado es mayor o igual que cero, se cuenta como número positivo
-        positivo += 1
+for cont in range(1, CANT_NUMEROS + 1):
+    num = int(input("Ingrese un número entero: "))
+    sumatoria += num
 
-# Se muestran los resultados por pantalla
-print("Se ingresaron", par, "números pares")
-print("Se ingresaron", impar, "números impares")
-print("Se ingresaron", negativo, "números negativos")
-print("Se ingresaron", positivo, "números positivos")
+
+print("la media de los 100 valores ingresados es de", (sumatoria / CANT_NUMEROS))
