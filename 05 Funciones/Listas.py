@@ -34,3 +34,18 @@ lista_vacia.append("tres")
 
 # Se muestra la variable lista_vacia con los 3 elementos agregados
 print(lista_vacia)
+
+
+
+
+# 4) Reemplazar el segundo y último valor de la lista “animales” con las palabras “loro” y “oso”, respectivamente.  
+# Imprimir la lista resultante por pantalla. ¡Puedes hacerlo como se muestra en los videos o bien investigar cómo funciona el
+# indexing con números negativos! animales = ["perro", "gato", "conejo", "pez"] 
+
+animales = ["perro", "gato", "conejo", "pez"] # Lista de animales dada por la consigna
+
+animales[1] = "loro"  # Se reemplaza el segundo elemento de la lista
+animales[-1] = "oso"  # Se reemplaza el ultimo elemento de la lista (indexing con num negativos)
+
+# Se muestra por pantalla la lista con el segundo y el ultimo elemento reemplazados
+print(animales)
