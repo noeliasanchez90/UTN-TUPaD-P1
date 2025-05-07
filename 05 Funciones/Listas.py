@@ -75,3 +75,17 @@ print(nueva_lista[:2]) # Muestra los elementos desde el inicio hasta la posició
 autos = ["sedan", "polo", "suran", "gol"]  # Lista que brinda la consigna del ejercicio
 autos[1:3] = ("Nivus", "Taos")   # Reemplaza los valores de índice 1 al 3, sin incluir el 3 por Nivus y Taos
 print(autos)  # Muestra la variable autos con los valores centrales de la lista reemplazados
+
+
+
+
+# 8) Crear una lista vacía llamada "dobles" y agregar el doble de 5, 10 y 15 usando append directamente. Imprimir la lista 
+# resultante por pantalla.
+
+dobles = []   # Se crea una lista vacía
+
+dobles.append(5 * 2)   # Se agregan los dobles con la función append()
+dobles.append(10 * 2)
+dobles.append(15 * 2)
+
+print(dobles)   # Se imprime por pantalla la lista resultante
