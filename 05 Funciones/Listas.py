@@ -49,3 +49,12 @@ animales[-1] = "oso"  # Se reemplaza el ultimo elemento de la lista (indexing co
 
 # Se muestra por pantalla la lista con el segundo y el ultimo elemento reemplazados
 print(animales)
+
+
+
+
+# 5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza.
+
+numeros = [8, 15, 3, 22, 7] # Crea una lista con 5 números según consigna
+numeros.remove(max(numeros)) # Con la función max() selecciona el numero de mayor valor de la lista, 22, y con la función remove() lo elimina
+print(numeros) # Muestra el contenido de lista con el máximo valor eliminado 
