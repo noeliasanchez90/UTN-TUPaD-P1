@@ -58,3 +58,12 @@ print(animales)
 numeros = [8, 15, 3, 22, 7] # Crea una lista con 5 números según consigna
 numeros.remove(max(numeros)) # Con la función max() selecciona el numero de mayor valor de la lista, 22, y con la función remove() lo elimina
 print(numeros) # Muestra el contenido de lista con el máximo valor eliminado 
+
+
+
+
+# 6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por pantalla los dos primeros. 
+
+nueva_lista = list(range(10, 31, 5)) # Lista creada con la función range() con números del 10 al 30 (incluído), haciendo saltos de 5 en 5
+print(nueva_lista[:2]) # Muestra los elementos desde el inicio hasta la posición 2, sin incluirla
+
