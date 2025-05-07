@@ -67,3 +67,11 @@ print(numeros) # Muestra el contenido de lista con el máximo valor eliminado
 nueva_lista = list(range(10, 31, 5)) # Lista creada con la función range() con números del 10 al 30 (incluído), haciendo saltos de 5 en 5
 print(nueva_lista[:2]) # Muestra los elementos desde el inicio hasta la posición 2, sin incluirla
 
+
+
+
+# 7) Reemplazar los dos valores centrales (índices 1 y 2) de la lista “autos” por dos nuevos valores cualesquiera. 
+
+autos = ["sedan", "polo", "suran", "gol"]  # Lista que brinda la consigna del ejercicio
+autos[1:3] = ("Nivus", "Taos")   # Reemplaza los valores de índice 1 al 3, sin incluir el 3 por Nivus y Taos
+print(autos)  # Muestra la variable autos con los valores centrales de la lista reemplazados
