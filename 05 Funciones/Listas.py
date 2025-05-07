@@ -12,7 +12,25 @@ print(lista_multiplo_4)
 # 2) Crear una lista con cinco elementos (colocar los elementos que más te gusten) y mostrar el penúltimo. ¡Puedes hacerlo como 
 # se muestra en los videos o bien investigar cómo funciona el indexing con números negativos!
  
-# Se crea una lista cuyos elementos son frutas
+# Se crea una lista de 5 elementos, cuyos elementos son frutas
 lista_elementos = ['manzana', 'banana', 'pera', 'kiwy', 'ciruela']
-print(lista_elementos[3]) # Muestra el elemento de la posición 2 de la lista, contabilizando desde el 0 que corresponde a 'manzana'
+
+print(lista_elementos[3]) # Muestra el elemento de la posición 3 de la lista, contabilizando desde el 0 que corresponde a 'manzana'
 print(lista_elementos[-2]) # indexing con número negativo, contabiliza desde el último elemento hacia el primero empezando del -1
+
+
+
+
+# 3) Crear una lista vacía, agregar tres palabras con append e imprimir la lista resultante por pantalla. Pista: para crear una 
+# lista vacía debes colocar los corchetes sin nada en su interior. Por ejemplo: lista_vacia = [] 
+
+# Se crea la lista vacía
+lista_vacia = []
+
+# Se agregan tres palabras usando append en la variable lista_vacia
+lista_vacia.append("uno")
+lista_vacia.append("dos") 
+lista_vacia.append("tres")
+
+# Se muestra la variable lista_vacia con los 3 elementos agregados
+print(lista_vacia)
