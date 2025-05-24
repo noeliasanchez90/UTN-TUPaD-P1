@@ -135,14 +135,29 @@ else:
 # el resultado con dos decimales.
 
 # Definición de funciones
-def calcular_imc(peso, altura):
-    return peso / (altura ** 2)
+#ef calcular_imc(peso, altura):
+#    return peso / (altura ** 2)
 
 # Programa principal
-peso = float(input("Ingrese su peso en kg: "))
-altura = float(input("Ingrese su altura en m: "))
+#peso = float(input("Ingrese su peso en kg: "))
+#altura = float(input("Ingrese su altura en m: "))
 
-imc = calcular_imc(peso, altura)
-print(f"El IMC es = {imc:.2f}")
+#imc = calcular_imc(peso, altura)
+#print(f"El IMC es = {imc:.2f}")
 
 
+
+
+# Ejercicio 9: Crear una función llamada celsius_a_fahrenheit(celsius) que reciba una temperatura en grados Celsius 
+# y devuelva su equivalente en Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el resultado usando
+# la función.
+
+
+# Definición de funciones
+def celsius_a_fahrenheit(celsius):
+    return (9/5) * celsius + 32
+
+# Programa principal
+
+temp = float(input("Ingrese la temperatura en grados Celsius: "))
+print(f"{temp} equivalen a {celsius_a_fahrenheit(temp):.2f} grados Fahrenheit")
