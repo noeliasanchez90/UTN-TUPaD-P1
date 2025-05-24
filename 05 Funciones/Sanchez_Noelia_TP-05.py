@@ -87,11 +87,42 @@ import math
 # tabla de multiplicar de ese número del 1 al 10. Pedir al usuario el número y llamar a la función.
 
 # Definición de funciones
-def tabla_multiplicar(numero):
-    for i in range(1,11):
-        resultado = numero * i
-        print(f"{i} x {numero} = {resultado} ")
+# def tabla_multiplicar(numero):
+#    for i in range(1,11):
+ #       resultado = numero * i
+ #       print(f"{i} x {numero} = {resultado} ")
     
 # Programa principal
-numero = int(input("ingrese un numero del cual quiere conocer su tabla de multiplicar: "))
-tabla_multiplicar(numero)
+#numero = int(input("ingrese un numero del cual quiere conocer su tabla de multiplicar: "))
+#tabla_multiplicar(numero)
+
+
+
+
+# Ejercicio 7: Crear una función llamada operaciones_basicas(a, b) que reciba dos números como parámetros y devuelva una
+# tupla con el resultado de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los resultados de forma clara.
+
+# Definición de funciones
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    if b == 0:
+        division = None
+        
+    else:
+        division = a / b 
+    return (suma, resta, multiplicacion, division) #tupla
+
+# Programa principal
+a = int(input("ingrese el primer valor: "))
+b = int(input("ingrese el segundo valor: "))
+
+resultado = operaciones_basicas(a, b)
+print(f"{a} + {b} = {resultado[0]}")
+print(f"{a} - {b} = {resultado[1]}")
+print(f"{a} * {b} = {resultado[2]}")
+if resultado[3] is not None:
+    print(f"{a} / {b} = {resultado[3]:.2f}")
+else:
+    print("División no válida (división por cero).")
