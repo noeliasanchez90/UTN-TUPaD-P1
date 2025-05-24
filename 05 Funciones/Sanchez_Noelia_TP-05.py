@@ -31,13 +31,36 @@ imprimir_hola_mundo()
 # y llamar a esta función con los valores ingresados.
 
 # Definición de funciones
-def informacion_personal(nombre, apellido, edad, residencia):
-    return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
+#def informacion_personal(nombre, apellido, edad, residencia):
+    #return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
     
 # Programa principal
-nombre = input("Ingrese su nombre: ")
-apellido = input("Ingrese su apellido: ")
-edad = input("Ingrese su edad: ")
-residencia = input("Ingrese su residencia: ")
+#nombre = input("Ingrese su nombre: ")
+#apellido = input("Ingrese su apellido: ")
+#edad = input("Ingrese su edad: ")
+# residencia = input("Ingrese su residencia: ")
 
-informacion_personal(nombre, apellido, edad, residencia)
+#informacion_personal(nombre, apellido, edad, residencia)
+
+
+
+
+# Ejercicio 4: Crear dos funciones: calcular_area_circulo(radio) que reciba el radio como parámetro y devuelva el área
+# del círculo. calcular_perimetro_circulo(radio) que reciba el radio como parámetro y devuelva el perímetro del círculo.
+# Solicitar el radio al usuario y llamar ambas funciones para mostrar los resultados.
+
+import math
+
+# Definición de funciones
+def calcular_area_circulo(radio):
+    area = math.pi * radio ** 2
+    print(f"El área del circulo es {area}")
+
+def calcular_perimetro_circulo(radio):
+    perimetro = 2 * math.pi * radio
+    print(f"El perimetro del circulo es {perimetro}")
+
+# Programa principal
+radio = float(input("ingrese el radio del círculo: "))
+calcular_area_circulo(radio)
+calcular_perimetro_circulo(radio)
