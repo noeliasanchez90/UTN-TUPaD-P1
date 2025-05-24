@@ -16,9 +16,28 @@ imprimir_hola_mundo()
 # Llamar a esta función desde el programa principal solicitando el nombre al usuario.
 
 # Definición de funciones
-def saludar_usuario(nombre):
-    return print(f"Hola {nombre}!")
+# def saludar_usuario(nombre):
+   # return print(f"Hola {nombre}!")
 
 # Programa principal
+#nombre = input("Ingrese su nombre: ")
+# saludar_usuario(nombre)
+
+
+
+
+# Ejercicio 3: Crear una función llamada informacion_personal(nombre, apellido, edad, residencia) que reciba cuatro
+# parámetros e imprima: “Soy [nombre] [apellido], tengo [edad] años y vivo en [residencia]”. Pedir los datos al usuario
+# y llamar a esta función con los valores ingresados.
+
+# Definición de funciones
+def informacion_personal(nombre, apellido, edad, residencia):
+    return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
+    
+# Programa principal
 nombre = input("Ingrese su nombre: ")
-saludar_usuario(nombre)
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+residencia = input("Ingrese su residencia: ")
+
+informacion_personal(nombre, apellido, edad, residencia)
