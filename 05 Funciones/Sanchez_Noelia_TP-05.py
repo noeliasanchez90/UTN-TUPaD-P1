@@ -54,13 +54,28 @@ import math
 # Definición de funciones
 def calcular_area_circulo(radio):
     area = math.pi * radio ** 2
-    print(f"El área del circulo es {area}")
+   # print(f"El área del circulo es {area}")
 
 def calcular_perimetro_circulo(radio):
     perimetro = 2 * math.pi * radio
-    print(f"El perimetro del circulo es {perimetro}")
+  #  print(f"El perimetro del circulo es {perimetro}")
 
 # Programa principal
 radio = float(input("ingrese el radio del círculo: "))
-calcular_area_circulo(radio)
+# calcular_area_circulo(radio)
 calcular_perimetro_circulo(radio)
+
+
+
+# Ejercicio 5: Crear una función llamada segundos_a_horas(segundos) que reciba una cantidad de segundos como parámetro y
+# devuelva la cantidad de horas correspondientes. Solicitar al usuario los segundos y mostrar el resultado usando esta 
+# función.
+
+# Definición de funciones
+def segundos_a_horas(seg):
+    horas = seg / 3600
+    print(f"{seg} segundos equivalen a {horas:.2f} horas")
+
+# Programa principal
+segundos = int(input("ingrese los segundos: "))
+segundos_a_horas(segundos)
