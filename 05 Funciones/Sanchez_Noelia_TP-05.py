@@ -126,3 +126,23 @@ if resultado[3] is not None:
     print(f"{a} / {b} = {resultado[3]:.2f}")
 else:
     print("División no válida (división por cero).")
+
+
+
+
+# Ejercicio 8: Crear una función llamada calcular_imc(peso, altura) que reciba el peso en kilogramos y la altura en 
+# metros, y devuelva el índice de masa corporal (IMC). Solicitar al usuario los datos y llamar a la función para mostrar
+# el resultado con dos decimales.
+
+# Definición de funciones
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+# Programa principal
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en m: "))
+
+imc = calcular_imc(peso, altura)
+print(f"El IMC es = {imc:.2f}")
+
+
