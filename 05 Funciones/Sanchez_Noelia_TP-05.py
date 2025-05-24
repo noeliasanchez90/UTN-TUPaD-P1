@@ -52,18 +52,18 @@ imprimir_hola_mundo()
 import math
 
 # Definición de funciones
-def calcular_area_circulo(radio):
-    area = math.pi * radio ** 2
+#def calcular_area_circulo(radio):
+#    area = math.pi * radio ** 2
    # print(f"El área del circulo es {area}")
 
-def calcular_perimetro_circulo(radio):
-    perimetro = 2 * math.pi * radio
+#def calcular_perimetro_circulo(radio):
+  #  perimetro = 2 * math.pi * radio
   #  print(f"El perimetro del circulo es {perimetro}")
 
 # Programa principal
-radio = float(input("ingrese el radio del círculo: "))
+#radio = float(input("ingrese el radio del círculo: "))
 # calcular_area_circulo(radio)
-calcular_perimetro_circulo(radio)
+# calcular_perimetro_circulo(radio)
 
 
 
@@ -72,10 +72,26 @@ calcular_perimetro_circulo(radio)
 # función.
 
 # Definición de funciones
-def segundos_a_horas(seg):
-    horas = seg / 3600
-    print(f"{seg} segundos equivalen a {horas:.2f} horas")
+#def segundos_a_horas(seg):
+#    horas = seg / 3600
+ #   print(f"{seg} segundos equivalen a {horas:.2f} horas")
 
 # Programa principal
-segundos = int(input("ingrese los segundos: "))
-segundos_a_horas(segundos)
+#segundos = int(input("ingrese los segundos: "))
+#segundos_a_horas(segundos)
+
+
+
+
+# Ejercicio 6: Crear una función llamada tabla_multiplicar(numero) que reciba un número como parámetro y imprima la
+# tabla de multiplicar de ese número del 1 al 10. Pedir al usuario el número y llamar a la función.
+
+# Definición de funciones
+def tabla_multiplicar(numero):
+    for i in range(1,11):
+        resultado = numero * i
+        print(f"{i} x {numero} = {resultado} ")
+    
+# Programa principal
+numero = int(input("ingrese un numero del cual quiere conocer su tabla de multiplicar: "))
+tabla_multiplicar(numero)
