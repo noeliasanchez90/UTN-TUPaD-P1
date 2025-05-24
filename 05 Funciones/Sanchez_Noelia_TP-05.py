@@ -16,12 +16,12 @@ imprimir_hola_mundo()
 # Llamar a esta función desde el programa principal solicitando el nombre al usuario.
 
 # Definición de funciones
-# def saludar_usuario(nombre):
-   # return print(f"Hola {nombre}!")
+def saludar_usuario(nombre):
+    return print(f"Hola {nombre}!")
 
 # Programa principal
-#nombre = input("Ingrese su nombre: ")
-# saludar_usuario(nombre)
+nombre = input("Ingrese su nombre: ")
+saludar_usuario(nombre)
 
 
 
@@ -31,16 +31,16 @@ imprimir_hola_mundo()
 # y llamar a esta función con los valores ingresados.
 
 # Definición de funciones
-#def informacion_personal(nombre, apellido, edad, residencia):
-    #return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
+def informacion_personal(nombre, apellido, edad, residencia):
+    return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
     
 # Programa principal
-#nombre = input("Ingrese su nombre: ")
-#apellido = input("Ingrese su apellido: ")
-#edad = input("Ingrese su edad: ")
-# residencia = input("Ingrese su residencia: ")
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+residencia = input("Ingrese su residencia: ")
 
-#informacion_personal(nombre, apellido, edad, residencia)
+informacion_personal(nombre, apellido, edad, residencia)
 
 
 
@@ -52,18 +52,18 @@ imprimir_hola_mundo()
 import math
 
 # Definición de funciones
-#def calcular_area_circulo(radio):
-#    area = math.pi * radio ** 2
-   # print(f"El área del circulo es {area}")
+def calcular_area_circulo(radio):
+    area = math.pi * radio ** 2
+    print(f"El área del circulo es {area: .2f}")
 
-#def calcular_perimetro_circulo(radio):
-  #  perimetro = 2 * math.pi * radio
-  #  print(f"El perimetro del circulo es {perimetro}")
+def calcular_perimetro_circulo(radio):
+    perimetro = 2 * math.pi * radio
+    print(f"El perimetro del circulo es {perimetro:.2f}")
 
 # Programa principal
-#radio = float(input("ingrese el radio del círculo: "))
-# calcular_area_circulo(radio)
-# calcular_perimetro_circulo(radio)
+radio = float(input("ingrese el radio del círculo: "))
+calcular_area_circulo(radio)
+calcular_perimetro_circulo(radio)
 
 
 
@@ -72,13 +72,13 @@ import math
 # función.
 
 # Definición de funciones
-#def segundos_a_horas(seg):
-#    horas = seg / 3600
- #   print(f"{seg} segundos equivalen a {horas:.2f} horas")
+def segundos_a_horas(seg):
+    horas = seg / 3600
+    print(f"{seg} segundos equivalen a {horas:.2f} horas")
 
 # Programa principal
-#segundos = int(input("ingrese los segundos: "))
-#segundos_a_horas(segundos)
+segundos = int(input("ingrese los segundos: "))
+segundos_a_horas(segundos)
 
 
 
@@ -87,14 +87,14 @@ import math
 # tabla de multiplicar de ese número del 1 al 10. Pedir al usuario el número y llamar a la función.
 
 # Definición de funciones
-# def tabla_multiplicar(numero):
-#    for i in range(1,11):
- #       resultado = numero * i
- #       print(f"{i} x {numero} = {resultado} ")
+def tabla_multiplicar(numero):
+    for i in range(1,11):
+        resultado = numero * i
+        print(f"{i} x {numero} = {resultado} ")
     
 # Programa principal
-#numero = int(input("ingrese un numero del cual quiere conocer su tabla de multiplicar: "))
-#tabla_multiplicar(numero)
+numero = int(input("ingrese un numero del cual quiere conocer su tabla de multiplicar: "))
+tabla_multiplicar(numero)
 
 
 
@@ -135,15 +135,15 @@ else:
 # el resultado con dos decimales.
 
 # Definición de funciones
-#ef calcular_imc(peso, altura):
-#    return peso / (altura ** 2)
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
 
 # Programa principal
-#peso = float(input("Ingrese su peso en kg: "))
-#altura = float(input("Ingrese su altura en m: "))
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en m: "))
 
-#imc = calcular_imc(peso, altura)
-#print(f"El IMC es = {imc:.2f}")
+imc = calcular_imc(peso, altura)
+print(f"El IMC es = {imc:.2f}")
 
 
 
@@ -161,3 +161,22 @@ def celsius_a_fahrenheit(celsius):
 
 temp = float(input("Ingrese la temperatura en grados Celsius: "))
 print(f"{temp} equivalen a {celsius_a_fahrenheit(temp):.2f} grados Fahrenheit")
+
+
+
+
+# Ejercicio 10: Crear una función llamada calcular_promedio(a, b, c) que reciba tres números como parámetros y devuelva 
+# el promedio de ellos. Solicitar los números al usuario y mostrar el resultado usando esta función.
+
+# Definición de funciones
+
+def calcular_promedio(a, b, c):
+    return (a + b + c) / 3
+
+# Programa principal
+a = float(input("ingrese el primer número: "))
+b = float(input("ingrese el segundo número: "))
+c = float(input("ingrese el tercer número: "))
+
+promedio = calcular_promedio(a, b, c)
+print(f"El promedio entre {a}, {b} y {c} es {promedio:.2f}")
