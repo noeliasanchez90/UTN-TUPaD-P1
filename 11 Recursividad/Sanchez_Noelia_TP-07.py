@@ -17,3 +17,8 @@ else:
     print(f"Factoriales del 1 al {num}:")
     for i in range(1, num + 1):
         print(f"{i}! = {factorial(i)}")
+
+
+
+
+# Ejercicio 2: 
