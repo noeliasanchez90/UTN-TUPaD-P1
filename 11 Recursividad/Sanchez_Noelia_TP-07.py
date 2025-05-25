@@ -25,17 +25,37 @@
 # Posteriormente, muestra la serie completa hasta la posición que el usuario especifique.
 
 # definir función Fibonacci
-def fibonacci(pos):
+#def fibonacci(pos):
 
-    if pos == 0:
-        return 0
-    elif pos == 1:
-        return 1
-    else:
-        return fibonacci(pos-1) + fibonacci(pos-2)
+#    if pos == 0:
+#        return 0
+#    elif pos == 1:
+#        return 1
+#    else:
+#        return fibonacci(pos-1) + fibonacci(pos-2)
 
 # solicitar al usuario que especifique la posición en la serie de Fibonacci 
-pos = int(input("Ingrese la posición de la serie de Fibonacci hasta la que quieres ver: "))
+#pos = int(input("Ingrese la posición de la serie de Fibonacci hasta la que quieres ver: "))
 
-for i in range(0, pos + 1):
-    print(f"F({i}) = {fibonacci(i)}")
+#for i in range(0, pos + 1):
+#    print(f"F({i}) = {fibonacci(i)}")
+
+
+
+
+# Ejercicio 3: Crea una función recursiva que calcule la potencia de un número base elevado a un exponente, utilizando
+# la fórmula 𝑛𝑚= 𝑛∗𝑛(𝑚−1). Prueba esta función en un algoritmo general.
+
+def potencia(n, m):
+    if m == 0:
+        return 1 # Cualquier número elevado a la 0 es 1
+    else:
+        return n * potencia(n, m-1)
+
+# Algoritmo general para probar la función
+base = int(input("Introduce la base (n): "))
+exponente = int(input("Introduce el exponente (m): "))
+
+resultado = potencia(base, exponente)
+print(f"{base} elevado a la {exponente} es: {resultado}")
+    
