@@ -1,8 +1,8 @@
 # Trabajo Práctico: Funciones en Python
 
-**Nombre y Apellido: Noelia Sánchez 
-**Carrera: Tecnicatura Universitaria en Programación a Distancia
-**Comisión: 21
+Nombre y Apellido: Noelia Sánchez 
+Carrera: Tecnicatura Universitaria en Programación a Distancia
+Comisión: 21
 
 ## Descripción
 
