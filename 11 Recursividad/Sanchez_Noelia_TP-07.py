@@ -126,3 +126,24 @@ def contar_bloques(n):
     return n + contar_bloques(n - 1) # suma el nivel actual y pasa al superior
   
 print(f"La cantidad de bloques ingresado es: {contar_bloques(4)}")
+
+
+
+
+
+# Ejercicio 8: Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un número entero positivo 
+# (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces aparece ese dígito dentro del número.
+
+def contar_digito(numero, digito):
+   if numero == 0:
+     return 0
+   else:
+    ultimo = numero % 10
+    resto = numero // 10
+    if ultimo == digito:
+        return 1 + contar_digito(resto, digito)
+    else:
+      return contar_digito(resto, digito)
+    
+
+print(contar_digito(12233421, 3))
