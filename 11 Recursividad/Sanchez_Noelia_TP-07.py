@@ -46,16 +46,30 @@
 # Ejercicio 3: Crea una función recursiva que calcule la potencia de un número base elevado a un exponente, utilizando
 # la fórmula 𝑛𝑚= 𝑛∗𝑛(𝑚−1). Prueba esta función en un algoritmo general.
 
-def potencia(n, m):
-    if m == 0:
-        return 1 # Cualquier número elevado a la 0 es 1
-    else:
-        return n * potencia(n, m-1)
+#def potencia(n, m):
+#    if m == 0:
+#        return 1 # Cualquier número elevado a la 0 es 1
+#    else:
+#        return n * potencia(n, m-1)
 
 # Algoritmo general para probar la función
-base = int(input("Introduce la base (n): "))
-exponente = int(input("Introduce el exponente (m): "))
+#base = int(input("Introduce la base (n): "))
+#exponente = int(input("Introduce el exponente (m): "))
 
-resultado = potencia(base, exponente)
-print(f"{base} elevado a la {exponente} es: {resultado}")
-    
+#resultado = potencia(base, exponente)
+#print(f"{base} elevado a la {exponente} es: {resultado}")
+
+
+
+
+# Ejercicio 4: Crear una función recursiva en Python que reciba un número entero positivo en base decimal y devuelva
+# su representación en binario como una cadena de texto.
+
+def decimal_a_binario(numDec):
+   if numDec == 0:
+     return ""     #Cuando numDec==0, devolvemos una cadena vacía 
+   else:
+     return decimal_a_binario(numDec // 2) + str(numDec % 2)
+
+# Ejemplo de uso
+print(decimal_a_binario(34))
