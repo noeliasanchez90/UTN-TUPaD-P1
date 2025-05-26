@@ -73,3 +73,26 @@ def decimal_a_binario(numDec):
 
 # Ejemplo de uso
 print(decimal_a_binario(34))
+
+
+
+
+# Ejercicio 5: Implementá una función recursiva llamada es_palindromo(palabra) que reciba una cadena de texto sin 
+# espacios ni tildes, y devuelva True si es un palíndromo o False si no lo es.
+# Requisitos:
+   # La solución debe ser recursiva.
+   # No se debe usar [::-1] ni la función reversed().
+
+def es_palindromo(texto):
+  if len(texto) <= 1: # cadenas vacías o de un solo caracter son palidromos
+    return True
+  
+  if texto[0] != texto[-1]:
+    return False
+  
+  else:
+    return es_palindromo(texto[1:-1]) # llama con el texto sin el primer y último carácter
+
+  
+print(f"NOELIA es palidromo: {es_palindromo("NOELIA")}")
+print(f"ANA es palidromo: {es_palindromo("ANA")}")
