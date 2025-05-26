@@ -110,3 +110,19 @@ def suma_digitos(n):
     return n % 10 + suma_digitos(n // 10)
   
 print(f"La suma de los dígitos  es: {suma_digitos(2523)}")
+
+
+
+
+# Ejercicio 7: Un niño está construyendo una pirámide con bloques. En el nivel más bajo coloca n bloques, en el 
+# siguiente nivel uno menos (n - 1), y así sucesivamente hasta llegar al último nivel con un solo bloque.
+# Escribí una función recursiva contar_bloques(n) que reciba el número de bloques en el nivel más bajo y devuelva el 
+# total de bloques que necesita para construir toda la pirámide.
+
+def contar_bloques(n):
+  if n == 1:
+    return 1 # caso base: la cima de la pirámide
+  else:
+    return n + contar_bloques(n - 1) # suma el nivel actual y pasa al superior
+  
+print(f"La cantidad de bloques ingresado es: {contar_bloques(4)}")
