@@ -13,3 +13,21 @@ precios_frutas['Pera'] = 2300
 
 # Mostrar resultado
 print(precios_frutas)
+
+
+
+
+# Ejercicio 2: Siguiendo con el diccionario precios_frutas que resulta luego de ejecutar el código desarrollado en el 
+# punto anterior, actualizar los precios de las siguientes frutas:
+# ● Banana = 1330
+# ● Manzana = 1700
+# ● Melón = 2800
+
+# Reemplazar el precio de las frutas 
+precios_frutas['Banana'] = 1330
+precios_frutas['Manzana'] = 1700
+precios_frutas['Melón'] = 2800
+
+# Mostrar el diccionario actualizado
+print(precios_frutas)
+
