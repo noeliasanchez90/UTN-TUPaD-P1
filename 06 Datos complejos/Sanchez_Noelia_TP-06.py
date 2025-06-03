@@ -31,3 +31,11 @@ precios_frutas['Melón'] = 2800
 # Mostrar el diccionario actualizado
 print(precios_frutas)
 
+
+
+
+
+# Ejercicio 3: Siguiendo con el diccionario precios_frutas que resulta luego de ejecutar el código desarrollado en el 
+# punto anterior, crear una lista que contenga únicamente las frutas sin los precios.
+
+print(precios_frutas.keys())
