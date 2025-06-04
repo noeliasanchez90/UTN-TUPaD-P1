@@ -93,3 +93,29 @@ for palabra in palabras:
 # Mostrar resultados
 print("Palabras únicas:", palabras_unicas)
 print("Recuento:", recuento)
+
+
+
+
+
+# Ejercicio 6: Permití ingresar los nombres de 3 alumnos, y para cada uno una tupla de 3 notas. Luego, mostrá el 
+# promedio de cada alumno.
+
+notas_alumnos = {}
+
+for i in range(1,4):
+    nombre = input(f"Ingrese el nombre del alumno {i}: ")
+    nota1 = float(input(f"Ingrese la primer nota de {nombre}: "))
+    nota2 = float(input(f"Ingrese la segunda nota de {nombre}: "))
+    nota3 = float(input(f"Ingrese la tercer nota de {nombre}: "))
+
+    notas_alumnos[nombre] = (nota1, nota2, nota3) # Tupla
+
+print("\nNotas de los alumnos:")
+for nombre, notas in notas_alumnos.items():
+    print(f"{nombre}: {notas}")
+
+print("\nPromedios:")
+for nombre, notas in notas_alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"{nombre}: {promedio:.2f}")
