@@ -39,3 +39,27 @@ print(precios_frutas)
 # punto anterior, crear una lista que contenga únicamente las frutas sin los precios.
 
 print(precios_frutas.keys())
+
+
+
+
+# Ejercicio 4: Escribí un programa que permita almacenar y consultar números telefónicos.
+#       • Permití al usuario cargar 5 contactos con su nombre como clave y número como valor.
+#       • Luego, pedí un nombre y mostrale el número asociado, si existe.
+
+agenda={}
+
+for i in range(1,4):
+    Nombre = input(f"Ingrese el nombre del alumno {i}: ")
+    Tel = input(f"Ingrese el telefono de {Nombre}: ")
+    agenda[Nombre] = Tel
+print("Agenda completa: ")
+print(agenda)
+
+# Consultar un numero de telefono
+Nom = input("Ingrese el nombre para obtener su telefono: ")
+
+if Nom in agenda:
+    print(f"El teléfono de {Nom} es: {agenda[Nom]}")
+else:
+    print(f"{Nom} no se encuentra en la agenda.")
