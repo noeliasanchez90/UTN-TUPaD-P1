@@ -47,19 +47,49 @@ print(precios_frutas.keys())
 #       • Permití al usuario cargar 5 contactos con su nombre como clave y número como valor.
 #       • Luego, pedí un nombre y mostrale el número asociado, si existe.
 
-agenda={}
+#agenda={}
 
-for i in range(1,4):
-    Nombre = input(f"Ingrese el nombre del alumno {i}: ")
-    Tel = input(f"Ingrese el telefono de {Nombre}: ")
-    agenda[Nombre] = Tel
-print("Agenda completa: ")
-print(agenda)
+#for i in range(1,6):
+#    Nombre = input(f"Ingrese el nombre del alumno {i}: ")
+#    Tel = input(f"Ingrese el telefono de {Nombre}: ")
+#    agenda[Nombre] = Tel
+#print("Agenda completa: ")
+#print(agenda)
 
 # Consultar un numero de telefono
-Nom = input("Ingrese el nombre para obtener su telefono: ")
+#Nom = input("Ingrese el nombre para obtener su telefono: ")
 
-if Nom in agenda:
-    print(f"El teléfono de {Nom} es: {agenda[Nom]}")
-else:
-    print(f"{Nom} no se encuentra en la agenda.")
+#if Nom in agenda:
+#    print(f"El teléfono de {Nom} es: {agenda[Nom]}")
+#else:
+#    print(f"{Nom} no se encuentra en la agenda.")
+
+
+
+
+
+# Ejercicio 5: Solicita al usuario una frase e imprime:
+#     • Las palabras únicas (usando un set).
+#     • Un diccionario con la cantidad de veces que aparece cada palabra.
+
+# Solicitar una frase al usuario
+frase = input("Ingresá una frase: ")
+
+# Separar las palabras
+palabras = frase.split()
+
+# Obtener las palabras únicas usando un set
+palabras_unicas = set(palabras)
+
+# Crear el diccionario de recuento
+recuento = {}
+
+for palabra in palabras:
+    if palabra in recuento:
+        recuento[palabra] += 1
+    else:
+        recuento[palabra] = 1
+
+# Mostrar resultados
+print("Palabras únicas:", palabras_unicas)
+print("Recuento:", recuento)
