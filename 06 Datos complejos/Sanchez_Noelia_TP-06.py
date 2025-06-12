@@ -143,3 +143,43 @@ print("Estudiantes que aprobaron un solo parcial de los dos: ", aprobaron_uno)
 # lista total de estudiantes que aprobaron al menos un parcial (union)
 aprobaron_al_menos_uno = parcial1 | parcial2
 print("Estudiantes que aprobaron al menos un parcial: ", aprobaron_al_menos_uno)
+
+
+
+
+
+#Ejercicio 8: Armá un diccionario donde las claves sean nombres de productos y los valores su stock. Permití al usuario:
+# • Consultar el stock de un producto ingresado.
+# • Agregar unidades al stock si el producto ya existe.
+# • Agregar un nuevo producto si no existe.
+
+# Diccionario con frutas
+stock_frutas = {"pera": 5, "manzana": 10, "banana": 9, "uva": 8}
+
+# Se solicita al usuario que ingrese una fruta
+fruta = input("Ingrese la fruta para saber su stock: ").lower()
+
+# Si la fruta está en el stock
+if fruta in stock_frutas:
+    print(f"El stock de '{fruta}' es de {stock_frutas[fruta]} unidades.")
+
+    # Consultar si se desea agregar más unidades
+    respuesta = input(f"¿Desea agregar más unidades a '{fruta}'? (s/n): ").lower()
+    if respuesta == 's':
+        cantidad = int(input("¿Cuántas unidades desea agregar?: "))
+        stock_frutas[fruta] += cantidad
+        print(f"Nuevo stock de '{fruta}': {stock_frutas[fruta]} unidades.")
+else:
+    print(f"'{fruta}' no se encuentra en el stock.")
+
+    # Preguntar si quiere agregar la fruta como nuevo producto
+    respuesta = input(f"¿Desea agregar '{fruta}' como nuevo producto? (s/n): ").lower()
+    if respuesta == "s":
+        cantidad = int(input(f"¿Cuántas unidades tiene '{fruta}'?: "))
+        stock_frutas[fruta] = cantidad
+        print(f"'{fruta}' fue agregado al stock con {cantidad} unidades.")
+
+# Mostrar stock final
+print("\n Stock actual:")
+for prod, cantidad in stock_frutas.items():
+    print(f"- {prod}: {cantidad} unidades")
