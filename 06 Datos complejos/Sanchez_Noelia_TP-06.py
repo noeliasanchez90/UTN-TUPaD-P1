@@ -129,3 +129,17 @@ print("Recuento:", recuento)
 #   • Mostrá los que aprobaron solo uno de los dos.
 #   • Mostrá la lista total de estudiantes que aprobaron al menos un parcial (sin repetir).
 
+parcial1 = {"100", "103", "105", "108", "110"}
+parcial2 = {"103", "105", "106", "108", "113"}
+
+#Alumnos que aprobaron ambos parciales (interesección)
+aprobaron_ambos = parcial1 & parcial2
+print("Estudiantes que aprobaron ambos parciales:", aprobaron_ambos)
+
+# Alumnos que aprobaron un solo parcial de los dos (diferencia simétrica)
+aprobaron_uno = parcial1 ^ parcial2
+print("Estudiantes que aprobaron un solo parcial de los dos: ", aprobaron_uno)
+
+# lista total de estudiantes que aprobaron al menos un parcial (union)
+aprobaron_al_menos_uno = parcial1 | parcial2
+print("Estudiantes que aprobaron al menos un parcial: ", aprobaron_al_menos_uno)
