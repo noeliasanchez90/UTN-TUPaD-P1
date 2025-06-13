@@ -148,6 +148,7 @@ print("Estudiantes que aprobaron al menos un parcial: ", aprobaron_al_menos_uno)
 
 
 
+
 #Ejercicio 8: Armá un diccionario donde las claves sean nombres de productos y los valores su stock. Permití al usuario:
 # • Consultar el stock de un producto ingresado.
 # • Agregar unidades al stock si el producto ya existe.
@@ -183,3 +184,33 @@ else:
 print("\n Stock actual:")
 for prod, cantidad in stock_frutas.items():
     print(f"- {prod}: {cantidad} unidades")
+
+
+
+
+
+
+# Ejercicio 9: Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
+# Permití consultar qué actividad hay en cierto día y hora.
+
+# Creación de la agenda
+agenda = {("Lunes", "8:30"): "Dentista",
+          ("Martes", "15:00"): "Reunión",
+          ("Jueves", "9:00"): "Clase de inglés",
+          ("Viernes", "18:00"): "Cumpleaños"}
+
+# Función para consultar actividad
+def consultar_actividad():
+    dia = input("Ingresar el día del evento: ").capitalize()
+    hora = input("Ingresar la hora del evento (Ej: 10:00): ")
+    clave = (dia, hora)
+    evento = agenda.get(clave)
+    
+    if evento:
+        print(f"Actividad programada: {evento}")
+    else:
+        print("No hay actividades programadas en ese día y hora.")
+
+    
+# Llamar a la función
+consultar_actividad()
