@@ -47,22 +47,22 @@ print(precios_frutas.keys())
 #       • Permití al usuario cargar 5 contactos con su nombre como clave y número como valor.
 #       • Luego, pedí un nombre y mostrale el número asociado, si existe.
 
-#agenda={}
+agenda={}
 
-#for i in range(1,6):
-#    Nombre = input(f"Ingrese el nombre del alumno {i}: ")
-#    Tel = input(f"Ingrese el telefono de {Nombre}: ")
-#    agenda[Nombre] = Tel
-#print("Agenda completa: ")
-#print(agenda)
+for i in range(1,6):
+    Nombre = input(f"Ingrese el nombre del alumno {i}: ")
+    Tel = input(f"Ingrese el telefono de {Nombre}: ")
+    agenda[Nombre] = Tel
+print("Agenda completa: ")
+print(agenda)
 
 # Consultar un numero de telefono
-#Nom = input("Ingrese el nombre para obtener su telefono: ")
+Nom = input("Ingrese el nombre para obtener su telefono: ")
 
-#if Nom in agenda:
-#    print(f"El teléfono de {Nom} es: {agenda[Nom]}")
-#else:
-#    print(f"{Nom} no se encuentra en la agenda.")
+if Nom in agenda:
+    print(f"El teléfono de {Nom} es: {agenda[Nom]}")
+else:
+    print(f"{Nom} no se encuentra en la agenda.")
 
 
 
@@ -101,24 +101,24 @@ print("Recuento:", recuento)
 # Ejercicio 6: Permití ingresar los nombres de 3 alumnos, y para cada uno una tupla de 3 notas. Luego, mostrá el 
 # promedio de cada alumno.
 
-#notas_alumnos = {}
+notas_alumnos = {}
 
-#for i in range(1,4):
-#    nombre = input(f"Ingrese el nombre del alumno {i}: ")
-#    nota1 = float(input(f"Ingrese la primer nota de {nombre}: "))
-#    nota2 = float(input(f"Ingrese la segunda nota de {nombre}: "))
-#    nota3 = float(input(f"Ingrese la tercer nota de {nombre}: "))
+for i in range(1,4):
+    nombre = input(f"Ingrese el nombre del alumno {i}: ")
+    nota1 = float(input(f"Ingrese la primer nota de {nombre}: "))
+    nota2 = float(input(f"Ingrese la segunda nota de {nombre}: "))
+    nota3 = float(input(f"Ingrese la tercer nota de {nombre}: "))
 
-#    notas_alumnos[nombre] = (nota1, nota2, nota3) # Tupla
+    notas_alumnos[nombre] = (nota1, nota2, nota3) # Tupla
 
-#print("\nNotas de los alumnos:")
-#for nombre, notas in notas_alumnos.items():
-#    print(f"{nombre}: {notas}")
+print("\nNotas de los alumnos:")
+for nombre, notas in notas_alumnos.items():
+    print(f"{nombre}: {notas}")
 
-#print("\nPromedios:")
-#for nombre, notas in notas_alumnos.items():
-#    promedio = sum(notas) / len(notas)
-#    print(f"{nombre}: {promedio:.2f}")
+print("\nPromedios:")
+for nombre, notas in notas_alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"{nombre}: {promedio:.2f}")
 
 
 
