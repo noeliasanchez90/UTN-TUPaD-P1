@@ -214,3 +214,22 @@ def consultar_actividad():
     
 # Llamar a la función
 consultar_actividad()
+
+
+
+
+
+# Ejercicio 10: Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo diccionario donde:
+# • Las capitales sean las claves.
+# • Los países sean los valores.
+
+#Diccionario original
+original = {"Argentina": "Buenos Aires", "Chile": "Santiago", "Paraguay": "Asunción"}
+print(original)
+
+# Crear nuevo diccionario invertido
+invertido = {capital: pais for pais, capital in original.items()}
+
+# Mostrar el nuevo diccionario
+print("Diccionario invertido:")
+print(invertido)
